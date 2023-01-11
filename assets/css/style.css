@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   font-size: 15px;
 }
 
-.wrapper {
+.container {
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,7 +25,7 @@ body {
   background-color: hsl(0, 0%, 98%);
   max-width: 1440px;
   padding: 100px 170px;
-  height: 100vh;
+  height: 100%;
 }
 
 .heading {
@@ -47,11 +48,13 @@ body {
 .description {
   color: hsl(229, 6%, 66%);
   display: block;
+  text-align: center;
   padding-top: 1.5rem;
 }
 
-.description + span {
-  color: hsl(229, 6%, 66%);
+.description > span::before{
+  content: "\A";
+  white-space: pre;
 }
 
 .main-wrapper {
@@ -131,10 +134,11 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .content-wrapper {
     max-width: 375px;
-    padding: 25px;
+    padding: 30px;
+    height: 100%;
   }
   .header-text-1 {
     font-size: 20px;
@@ -145,13 +149,14 @@ body {
   }
 
   .description {
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
-}
+    display: inline-block;
+  }
 
-  .description + span {
-    font-size: 13px;
-    text-align: center;
+  .description > span::before{
+    content: "\A";
+  white-space: normal;
   }
 
   .main-wrapper {

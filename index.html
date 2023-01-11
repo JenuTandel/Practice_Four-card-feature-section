@@ -4,14 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <style>
+    .attribution{
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a{
+      color: hsl(228,45%,44%);
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrapper">
+  <!-- start: Container Section -->
+  <section class="container">
+    <!-- start: Content Wrapper -->
     <div class="content-wrapper">
       <!-- start: Heading -->
       <div class="heading">
@@ -19,12 +29,12 @@
         <p class="header-text-2">Powered by Technology</h1>
         <p class="description">
           Our Artificial Intelligence powered tools use millions of project
-          data
+          data<span>points to ensure that your project is successful</span>
         </p>
-        <span>points to ensure that your project is successful</span>
       </div>
       <!-- end: Heading -->
 
+      <!-- start: Main Wrapper -->
       <main class="main-wrapper">
         <!-- start: card 1 -->
         <div class="card-wrapper-cyan">
@@ -82,8 +92,16 @@
         </div>
         <!-- start: card 4 -->
       </main>
+      <!-- end: Main Wrapper -->
     </div>
-    </section>
+    <!-- end: Content Wrapper -->
+  </section>
+  <!-- end: Container Section -->
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jinal Tandel</a>.
+    </p>
+  </footer>
 </body>
-
 </html>
